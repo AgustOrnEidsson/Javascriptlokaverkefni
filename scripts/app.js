@@ -2,12 +2,12 @@ $.ajax({
 	'url': 'http://apis.is/flight',
   	'type': 'GET',
   	'dataType': 'json',
-	'data': {'language': 'is', 'type': 'departures'},
+	'data': {'language': 'is', 'type': 'arrivals'},
 	'success': function(response) {
 		console.log(response)
 	  	var dic = {}
-	  	for (x=1;x < response.results.length; x++) {		
-			dic[response.results[x].airline] = {timiplan : response.results[x].date, til : response.results[x].flightNumber,flugfelag : response.results[x].to,for : response.results[x].plannedArrival};
+	  	for (x=1;x < response.results.length; x++) {			
+			dic[response.results[x].airline] = {timiplan : response.results[x].date, til : response.results[x].flightNumber,flugfelag : response.results[x].from,for : response.results[x].plannedArrival};
 		};
 		for (key in dic){
 			if(key!=="null"){
