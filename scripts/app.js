@@ -4,7 +4,7 @@ document.getElementById("head").innerHTML+='<title>Flug</title>';
 function depp(){
 	$("#flug").html("");
     $.ajax({
-		'url': 'http://apis.is/flight',
+		'url': 'https://apis.is/flight',
 	  	'type': 'GET',
 	  	'dataType': 'json',
 		'data': {'language': 'is', 'type': 'departures'},
@@ -29,7 +29,7 @@ function depp(){
 function arrr(){
 	$("#flug").html("");
 	$.ajax({
-		'url': 'http://apis.is/flight',
+		'url': 'https://apis.is/flight',
 	  	'type': 'GET',
 	  	'dataType': 'json',
 		'data': {'language': 'is', 'type': 'arrivals'},
