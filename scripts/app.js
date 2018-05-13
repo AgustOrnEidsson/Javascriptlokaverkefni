@@ -1,11 +1,5 @@
 document.getElementById("head").innerHTML+='<title>Flug</title>';
 
-document.addEventListener("DOMContentLoaded", function(event)
-{
-    timepicker.load({
-        interval: 15
-    });
-});
 
 function depp(){
 	$("#flug").html("");
