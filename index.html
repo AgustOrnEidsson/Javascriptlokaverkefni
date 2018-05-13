@@ -3,15 +3,19 @@
 <head id="head">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="view/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<!-- á eftir að breyta þessu í javascript -->
 	<div class="topnav">
-	  <a id="forsida">Forsíða</a>
-	  <a id="komur">Komur</a>
-	  <a id="farir">Farir</a>
+	  	<a id="komur" onclick="arrr()">Komur</a>
+	  	<a id="farir" onclick="depp()">Farir</a>
+	  	<input type="text" id="leita" onkeyup="leita()" placeholder="Sláðu inn Borg">
+	  	<input type="text" id="time" onkeyup="timi()" placeholder="Sláðu inn tíma með :">
+        <script src="scripts/timepicker.min.js"></script>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/data.js"></script>
+	<div id="flug"></div>
+	
+	<script type="text/javascript" src="scripts/app.js"></script>
 </body>
 </html>
